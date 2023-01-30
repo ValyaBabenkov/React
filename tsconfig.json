@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		//Куда производится сборка (не нужна)
+		"outDir": "./dist/",
+		//Стройгая типотизация (не пропускает)
+		"noImplicitAny": true,
+		//ESNext || es6
+		"module": "ESNext",
+		//В какой синтаксис будет компилироваться (es6)
+		"target": "es5",
+		"jsx": "react",
+		//ts,js
+		"allowJs": true,
+		//99% node
+		"moduleResolution": "node",
+		//esModuleInterop - для import -> require()
+		"esModuleInterop": true,
+		//Поддержка export default
+		"allowSyntheticDefaultImports": true,
+
+		//
+		"baseUrl": "."
+	},
+	"ts-node": {
+		"compilerOptions": {
+			"module": "CommonJS"
+		}
+	}
+}
