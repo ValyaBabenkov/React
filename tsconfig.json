@@ -8,7 +8,7 @@
 		"module": "ESNext",
 		//В какой синтаксис будет компилироваться (es6)
 		"target": "es5",
-		"jsx": "react",
+		"jsx": "react-jsx",
 		//ts,js
 		"allowJs": true,
 		//99% node
