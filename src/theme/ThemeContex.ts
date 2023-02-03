@@ -10,7 +10,4 @@ export interface ThemeContentProps {
 	setTheme?: (theme: Theme) => void
 }
 export const ThemeContent = createContext<ThemeContentProps>({})
-// const toggleTheme = () => {
-// 	setTheme(theme === Theme.DARK ? Theme.LIGHT : Theme.DARK)
-// }
 export const LOCAL_STORAGE_THEME_KEY = 'theme'
