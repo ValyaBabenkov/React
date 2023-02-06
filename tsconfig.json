@@ -19,7 +19,11 @@
 		"allowSyntheticDefaultImports": true,
 
 		//
-		"baseUrl": "."
+		"baseUrl": ".",
+		//Все export/import будут находитья в src
+		"paths": {
+			"*": ["./src/*"]
+		}
 	},
 	"ts-node": {
 		"compilerOptions": {
