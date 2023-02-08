@@ -3,6 +3,7 @@ import { classNames } from 'shared/lib/classNames/className'
 import { useTheme } from 'app/providers/ThemeProvider'
 import { AppRouter } from 'app/providers/routes'
 import { Navbar } from 'widgets/Navbar'
+import { Sidebar } from 'widgets/Sidebar'
 
 export default function App() {
 	const { theme } = useTheme()
@@ -12,7 +13,10 @@ export default function App() {
 			className={classNames('app', { hovered: false, selected: true }, [theme])}
 		>
 			<Navbar />
-			<AppRouter />
+			<div className={'content-page'}>
+				<Sidebar />
+				<AppRouter />
+			</div>
 		</div>
 	)
 }
