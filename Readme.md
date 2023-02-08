@@ -29,6 +29,13 @@ https://webpack.js.org/plugins/mini-css-extract-plugin/#root
 Css modules
 https://webpack.js.org/loaders/postcss-loader/#css-modules
 
+SVG
+https://react-svgr.com/docs/webpack/
+https://stackoverflow.com/questions/44717164/unable-to-import-svg-files-in-typescript
+
+IMAGE
+https://v4.webpack.js.org/loaders/file-loader/
+
 ```
 npm i -D webpack@5.69.1 webpack-cli@4.9.2 html-webpack-plugin@5.5.0 typescript@4.5.5 ts-loader@9.2.6
 npm i -D ts-node@10.5.0 @types/node@17.0.21 @types/webpack@5.28.0
@@ -41,6 +48,10 @@ npm i -D sass-loader@12.6.0 sass@1.49.9 css-loader@6.6.0 style-loader@3.3.1 mini
 
 npm i react-router-dom@6.2.1
 npm i -D @types/react-router-dom@5.3.3
+
+npm install --save-dev @svgr/webpack@6.2.1
+
+npm install file-loader --save-dev@6.2.0
 
 ```
 
