@@ -7,5 +7,6 @@ export function buildDevServer(options: BuildOptions): DevServerConfiguration {
 		open: true,
 		//Для рендинга через главную страницу
 		historyApiFallback: true,
+		hot: true,
 	}
 }

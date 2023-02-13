@@ -5,6 +5,26 @@ import { BuildOptions } from './types/config'
 export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
 	//Учитываем порядок!!!!
 
+	const babelLoader = {
+		test: /\.(js|jsx|ts|tsx)$/,
+		exclude: /node_modules/,
+		use: {
+			loader: 'babel-loader',
+			options: {
+				presets: ['@babel/preset-env'],
+				plugins: [
+					[
+						'i18next-extract',
+						{
+							locales: ['ru', 'en'],
+							keyAsDefaultValue: true,
+						},
+					],
+				],
+			},
+		},
+	}
+
 	//Можнон добавть шрифты
 	const fileLoader = {
 		test: /\.(png|jpe?g|gif)$/i,
@@ -14,6 +34,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
 			},
 		],
 	}
+
 	const svgrLoader = {
 		test: /\.svg$/i,
 		issuer: /\.[jt]sx?$/,
@@ -45,5 +66,5 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
 		exclude: /node_modules/,
 	}
 
-	return [fileLoader, typescriptLoader, sassLoader, svgrLoader]
+	return [fileLoader, babelLoader, typescriptLoader, sassLoader, svgrLoader]
 }

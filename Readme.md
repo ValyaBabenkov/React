@@ -36,6 +36,15 @@ https://stackoverflow.com/questions/44717164/unable-to-import-svg-files-in-types
 IMAGE
 https://v4.webpack.js.org/loaders/file-loader/
 
+i18n
+https://www.i18next.com/overview/getting-started
+
+Hot Reshresh
+https://webpack.js.org/guides/hot-module-replacement/
+
+Babel
+https://babeljs.io/setup
+
 ```
 npm i -D webpack@5.69.1 webpack-cli@4.9.2 html-webpack-plugin@5.5.0 typescript@4.5.5 ts-loader@9.2.6
 npm i -D ts-node@10.5.0 @types/node@17.0.21 @types/webpack@5.28.0
@@ -52,6 +61,14 @@ npm i -D @types/react-router-dom@5.3.3
 npm install --save-dev @svgr/webpack@6.2.1
 
 npm install file-loader --save-dev@6.2.0
+
+npm i i18next@21.6.11 react-i18next@11.15.5 i18next-browser-languagedetector@6.1.3 i18next-http-backend@1.3.2
+
+npm install --save-dev babel-loader@8.2.3 @babel/core@7.17.5
+npm install @babel/preset-env@7.16.11 --save-dev
+npm i babel-plugin-i18next-extract@0.8.3 --save-dev
+
+
 
 ```
 
