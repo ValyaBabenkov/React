@@ -4,7 +4,7 @@
 .env
 # Xcode
 #
-build/
+/build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -24,7 +24,6 @@ ios/.xcode.env.local
 
 # Android/IntelliJ
 #
-build/
 .idea
 .gradle
 local.properties
