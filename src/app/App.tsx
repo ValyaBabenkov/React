@@ -12,7 +12,7 @@ export default function App() {
 
     return (
         <div
-            className={classNames('app', { hovered: false, selected: true }, [theme])}
+            className={classNames('app', {}, [theme])}
         >
             <Suspense fallback="">
                 <Navbar />
