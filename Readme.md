@@ -48,6 +48,9 @@ https://babeljs.io/setup
 Eslint
 https://eslint.org/docs/latest/use/getting-started
 
+Jest 
+
+
 ```
 npm i -D webpack@5.69.1 webpack-cli@4.9.2 html-webpack-plugin@5.5.0 typescript@4.5.5 ts-loader@9.2.6
 npm i -D ts-node@10.5.0 @types/node@17.0.21 @types/webpack@5.28.0
@@ -76,6 +79,14 @@ sudo npm install -g eslint
 
 Linter css
 npm install --save-dev stylelint@14.5.3 stylelint-config-standard@3.0.0
+
+Jest
+https://jestjs.io/docs/getting-started#generate-a-basic-configuration-file
+npm install -g jest
+npm i -D jest@27.5.1
+npm i -D @types/jest@29.4.0
+jest --init
+
 
 ```
 
