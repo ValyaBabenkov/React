@@ -45,6 +45,9 @@ https://webpack.js.org/guides/hot-module-replacement/
 Babel
 https://babeljs.io/setup
 
+Eslint
+https://eslint.org/docs/latest/use/getting-started
+
 ```
 npm i -D webpack@5.69.1 webpack-cli@4.9.2 html-webpack-plugin@5.5.0 typescript@4.5.5 ts-loader@9.2.6
 npm i -D ts-node@10.5.0 @types/node@17.0.21 @types/webpack@5.28.0
@@ -68,7 +71,11 @@ npm install --save-dev babel-loader@8.2.3 @babel/core@7.17.5
 npm install @babel/preset-env@7.16.11 --save-dev
 npm i babel-plugin-i18next-extract@0.8.3 --save-dev
 
+npm init @eslint/config
+sudo npm install -g eslint
 
+Linter css
+npm install --save-dev stylelint@14.5.3 stylelint-config-standard@3.0.0
 
 ```
 
