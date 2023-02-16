@@ -48,7 +48,10 @@ https://babeljs.io/setup
 Eslint
 https://eslint.org/docs/latest/use/getting-started
 
-Jest 
+Jest
+https://jestjs.io/docs/getting-started#generate-a-basic-configuration-file
+
+BundelAnalizator
 
 
 ```
@@ -81,12 +84,13 @@ Linter css
 npm install --save-dev stylelint@14.5.3 stylelint-config-standard@3.0.0
 
 Jest
-https://jestjs.io/docs/getting-started#generate-a-basic-configuration-file
 npm install -g jest
 npm i -D jest@27.5.1
 npm i -D @types/jest@29.4.0
 jest --init
 
+BundelAnalizator
+yarn add -D webpack-bundle-analyzer @types/webpack-bundle-analyzer
 
 ```
 
