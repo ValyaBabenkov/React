@@ -1,5 +1,7 @@
 {
 	"Language": "English",
 	"Hello": "Hello",
-	"PageNotFound": "PageNotFound"
+	"PageNotFound": "PageNotFound",
+	"Refresh_page": "Обновить",
+	"RefreshPageTitle": "Непридвиденная ошибка"
 }
