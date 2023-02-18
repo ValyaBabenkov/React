@@ -3,8 +3,15 @@
  * https://jestjs.io/docs/configuration
  */
 
-export default {
+import path from 'path';
 
+export default {
+    // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
+    moduleNameMapper: {
+        '\\.s?css$': 'identity-obj-proxy',
+        '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+        '@/(.*)': '<rootDir>/src/$1',
+    },
     // A preset that is used as a base for Jest's configuration
     preset: 'ts-jest',
 
@@ -44,6 +51,10 @@ export default {
     transform: {
         '^.+\\.ts?$': 'ts-jest',
     },
+    modulePaths: [
+        '<rootDir>src',
+    ],
+    setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
 
     // Indicates whether the coverage information should be collected while executing the test
     // collectCoverage: false,
@@ -94,9 +105,6 @@ export default {
     // An array of directory names to be searched recursively up from the requiring module's location
 
     // An array of file extensions your modules use
-
-    // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-    // moduleNameMapper: {},
 
     // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
     // modulePathIgnorePatterns: [],
