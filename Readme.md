@@ -70,6 +70,9 @@ https://storybook.js.org/docs/react/builders/webpack
 https://storybook.js.org/addons/storybook-css-modules - css
 https://storybook.js.org/docs/react/writing-stories/decorators - decorators
 
+Loki (ScreenTesting)
+https://loki.js.org/getting-started.html
+
 ```
 yarn add -D webpack@5.69.1 webpack-cli@4.9.2 html-webpack-plugin@5.5.0 typescript@4.5.5 ts-loader@9.2.6
 yarn add -D ts-node@10.5.0 @types/node@17.0.21 @types/webpack@5.28.0
@@ -117,6 +120,9 @@ yarn add -D regenerator-runtime@0.13.9
 
 ## Webpack Story Book
 npx sb init --builder webpack5
+
+## Loki (ScreenTesting) 
+yarn add -D loki
 
 ```
 
