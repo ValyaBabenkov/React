@@ -8,7 +8,7 @@ export function buildPlugins({
     paths,
     isDev,
 }: BuildOptions): webpack.WebpackPluginInstance[] {
-    return [
+    const plugins = [
         // Для отоборажение прогресса
         new webpack.ProgressPlugin(),
         new HtmlWebpackPlugin({
@@ -21,10 +21,18 @@ export function buildPlugins({
         new DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev),
         }),
-        new webpack.HotModuleReplacementPlugin(),
-        new BundleAnalyzerPlugin({
-            // Отключаем
-            openAnalyzer: false,
-        }),
     ];
+    if (isDev) {
+        plugins.push(
+            new webpack.HotModuleReplacementPlugin(),
+        );
+        plugins.push(
+            new BundleAnalyzerPlugin({
+                // Отключаем
+                openAnalyzer: false,
+            }),
+        );
+    }
+
+    return plugins;
 }
