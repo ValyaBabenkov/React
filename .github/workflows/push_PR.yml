@@ -5,11 +5,11 @@ on:
   pull_request:
     branches: [ master ]
 jobs:
-  Pipeline:
+  pipeline:
     runs-on: ubuntu-latest,
     strategy:
       matrix:
-        node-version: [17.x]
+        node-version: [ 17.x ]
 
     steps:
       - uses: actions/checkout@v2
@@ -17,16 +17,15 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-
       - name: install modules
-        run: yarn
+        run: npm install
       - name: build production version
-        run: yarn run build:prod
+        run: npm run build:prod
       - name: lint ts
-        run: yarn run lint:ts
+        run: npm run lint:ts
       - name: lint scsss
-        run: yarn run lint:scss
+        run: npm run lint:scss
       - name: run storybook
-        run: yarn run build-storybook
+        run: npm run build-storybook
       - name: run unit testing
-        run: yarn run test-unit
+        run: npm run test-unit
