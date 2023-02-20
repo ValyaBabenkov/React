@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: install modules
-        run: yarn
+        run: yarn install -g
       - name: build production version
         run: yarn run build:prod
       - name: lint ts
