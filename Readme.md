@@ -72,10 +72,14 @@ https://storybook.js.org/docs/react/writing-stories/decorators - decorators
 
 Loki (ScreenTesting)
 https://loki.js.org/getting-started.html
+FrontEnd (reg-cli) https://github.com/oblador/loki/issues/76
 
 GitActions
 https://docs.github.com/ru/actions/quickstart
 https://dev.to/dyarleniber/setting-up-a-ci-cd-workflow-on-github-actions-for-a-react-app-with-github-pages-and-codecov-4hnp
+
+React Router Dom (test)
+https://reactrouter.com/en/main/router-components/memory-router
 
 ```
 yarn add -D webpack@5.69.1 webpack-cli@4.9.2 html-webpack-plugin@5.5.0 typescript@4.5.5 ts-loader@9.2.6
@@ -127,6 +131,7 @@ npx sb init --builder webpack5
 
 ## Loki (ScreenTesting) 
 yarn add -D loki
+yarn add -D reg-cli@0.17.6
 
 
 ```

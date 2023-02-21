@@ -23,19 +23,25 @@ jobs:
 
       - name: Build production version
         run: yarn run build-prod
+        if: always()
 
       - name: Lint TS
         run: yarn run lint-ts
+        if: always()
 
       - name: Lint SCSS
         run: yarn run lint-scss
+        if: always()
 
       - name: Unit testing
         run: yarn run test-unit
+        if: always()
 
       - name: Run Storybook
         run: yarn run build-storybook
+        if: always()
 
       - name: Run Loki testing
         run: yarn run test-ui-ci
+        if: always()
 
