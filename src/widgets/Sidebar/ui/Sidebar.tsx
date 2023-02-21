@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { classNames } from 'shared/lib/classNames/className';
-import { Button } from 'shared/ui/Button/ui/Button';
+import { Button, ButtonSize, ButtonTheme } from 'shared/ui/Button/ui/Button';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
 import { LangSwitcher } from 'widgets/LangSwitcher';
 import { useTranslation } from 'react-i18next';
@@ -26,7 +26,6 @@ export const Sidebar = ({ className }: SidebarProps) => {
                 className,
             ])}
         >
-            <Button data-testid="sidebar-toggle" onClick={onToggle}>{t('title')}</Button>
             <div className={cls.items}>
                 <AppLink className={cls.item} theme={AppLinkTheme.SECONDARY} to={RoutePath.main}>
                     <MainIcon className={cls.icon} />
@@ -40,6 +39,16 @@ export const Sidebar = ({ className }: SidebarProps) => {
 
             </div>
 
+            <Button
+                data-testid="sidebar-toggle"
+                onClick={onToggle}
+                className={cls.collapsedBtn}
+                theme={ButtonTheme.BACKGROUND_INVERTED}
+                square
+                size={ButtonSize.L}
+            >
+                { collapsed ? '>' : '<'}
+            </Button>
             <div className={cls.switchers}>
                 <ThemeSwitcher />
                 <LangSwitcher className={cls.lang} />
