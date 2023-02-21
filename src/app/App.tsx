@@ -1,11 +1,10 @@
-import 'app/styles/index.scss';
+import React, { Suspense, useState } from 'react';
 import { classNames } from 'shared/lib/classNames/className';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/routes';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
 import 'shared/config/i18n/i18n';
-import { Suspense, useEffect } from 'react';
 
 export default function App() {
     const { theme } = useTheme();

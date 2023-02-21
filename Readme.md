@@ -48,6 +48,9 @@ https://babeljs.io/setup
 Eslint
 https://eslint.org/docs/latest/use/getting-started
 
+React Eslint Hook
+https://ru.reactjs.org/docs/hooks-rules.html
+
 Jest
 https://jestjs.io/docs/getting-started#generate-a-basic-configuration-file
 
@@ -80,6 +83,8 @@ https://dev.to/dyarleniber/setting-up-a-ci-cd-workflow-on-github-actions-for-a-r
 
 React Router Dom (test)
 https://reactrouter.com/en/main/router-components/memory-router
+
+
 
 ```
 yarn add -D webpack@5.69.1 webpack-cli@4.9.2 html-webpack-plugin@5.5.0 typescript@4.5.5 ts-loader@9.2.6
@@ -132,6 +137,9 @@ npx sb init --builder webpack5
 ## Loki (ScreenTesting) 
 yarn add -D loki
 yarn add -D reg-cli@0.17.6
+
+## Eslint use Hook
+yarn add -D eslint-plugin-react-hooks
 
 
 ```

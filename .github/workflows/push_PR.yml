@@ -42,6 +42,6 @@ jobs:
         if: always()
 
       - name: Run Loki testing
-        run: yarn run test-ui-ci
+        run: yarn run test-123-ci
         if: always()
 
