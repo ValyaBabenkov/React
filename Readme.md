@@ -84,6 +84,9 @@ https://dev.to/dyarleniber/setting-up-a-ci-cd-workflow-on-github-actions-for-a-r
 React Router Dom (test)
 https://reactrouter.com/en/main/router-components/memory-router
 
+React Toolkit
+https://redux-toolkit.js.org/introduction/getting-started
+https://github.com/reduxjs/reselect (Reselect)
 
 
 ```
@@ -140,6 +143,9 @@ yarn add -D reg-cli@0.17.6
 
 ## Eslint use Hook
 yarn add -D eslint-plugin-react-hooks
+
+## Redux Toolkit
+yarn add @reduxjs/toolkit react-redux
 
 
 ```
