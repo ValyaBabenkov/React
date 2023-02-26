@@ -11,13 +11,15 @@ interface ModalProps {
     children?: ReactNode;
     isOpen?: boolean;
     onClose?: ()=>void
+    lazy?: boolean
 }
 
 const ANIMATION_DELAY = 400;
 const Modal:FC<ModalProps> = ({
     className, children,
-    isOpen, onClose,
+    isOpen, onClose, lazy,
 }) => {
+    const [isMounted, setIsMounted] = useState<boolean>(false);
     const [isClosing, setIsClosing] = useState(false);
     const timerRef = useRef<ReturnType<typeof setTimeout>>();
 
@@ -52,10 +54,16 @@ const Modal:FC<ModalProps> = ({
         };
     }, [isOpen, onKeyDown]);
 
+    useEffect(() => {
+        if (isOpen) setIsMounted(true);
+    }, [isOpen]);
+
     const mods: Record<string, boolean> = {
         [cls.opened]: isOpen,
         [cls.isClosing]: isClosing,
     };
+
+    if (lazy && !isMounted) return null;
     return (
         <Portal>
             <div
