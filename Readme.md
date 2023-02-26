@@ -87,6 +87,7 @@ https://reactrouter.com/en/main/router-components/memory-router
 ## React Toolkit
 https://redux-toolkit.js.org/introduction/getting-started
 https://github.com/reduxjs/reselect (Reselect)
+https://redux-toolkit.js.org/api/createAsyncThunk (Async Thunk)
 
 ## JsonServer
 https://github.com/typicode/json-server
@@ -159,6 +160,9 @@ yarn add -D json-server
 
 ## Husky
 npx husky-init
+
+## Axios
+yarn add axios
 
 
 ```

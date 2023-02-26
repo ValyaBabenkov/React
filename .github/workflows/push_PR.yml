@@ -38,7 +38,7 @@ jobs:
         if: always()
 
       - name: Run Storybook
-        run: yarn run build-storybook
+        run: yarn run storybook-build
         if: always()
 
       - name: Run Loki testing

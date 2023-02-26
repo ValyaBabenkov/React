@@ -7,7 +7,7 @@
 		//ESNext || es6
 		"module": "ESNext",
 		//В какой синтаксис будет компилироваться (es6)
-		"target": "es5",
+		"target": "es6",
 		"jsx": "react-jsx",
 		//ts,js
 		"allowJs": true,

@@ -29,6 +29,13 @@ ClearInverted.args = {
     size: ButtonSize.M,
 };
 
+export const Disabled = Template.bind({});
+Disabled.args = {
+    theme: ButtonTheme.OUTLINE,
+    children: 'Text',
+    disabled: true,
+};
+
 export const Outline = Template.bind({});
 Outline.args = {
     children: 'Text',

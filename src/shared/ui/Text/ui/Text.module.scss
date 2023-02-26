@@ -1,0 +1,24 @@
+.Text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font: var(--font-l);
+    color: var(--primary-color);
+}
+
+.text {
+    font: var(--font-m);
+    color: var(--secondary-color);
+}
+
+.error {
+    .title {
+        color: var(--error-dark-color)
+    }
+
+    .text {
+        color: var(--error-light-color)
+    }
+}
