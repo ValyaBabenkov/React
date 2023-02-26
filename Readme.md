@@ -88,6 +88,9 @@ React Toolkit
 https://redux-toolkit.js.org/introduction/getting-started
 https://github.com/reduxjs/reselect (Reselect)
 
+JsonServer
+https://github.com/typicode/json-server
+https://github.com/typicode/json-server#custom-routes-example
 
 ```
 yarn add -D webpack@5.69.1 webpack-cli@4.9.2 html-webpack-plugin@5.5.0 typescript@4.5.5 ts-loader@9.2.6
@@ -147,6 +150,9 @@ yarn add -D eslint-plugin-react-hooks
 ## Redux Toolkit
 yarn add @reduxjs/toolkit react-redux
 
+##JsonServer
+npm install -g json-server
+yarn add -D json-server
 
 ```
 
