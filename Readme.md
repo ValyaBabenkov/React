@@ -8,56 +8,56 @@ npm init -y
 
 ## Ссылки:
 
-Webpack:
+## Webpack:
 https://webpack.js.org/concepts/
 https://webpack.js.org/plugins/
 
-TS:
+## TS:
 https://webpack.js.org/guides/typescript/
 https://webpack.js.org/configuration/configuration-languages/
 
-DevServer
+## DevServer
 https://webpack.js.org/configuration/dev-server/
 
-Env
+## Env
 https://webpack.js.org/guides/environment-variables/
 
-Sass loader (Minicssplugin)
+## Sass loader (Minicssplugin)
 https://webpack.js.org/loaders/sass-loader/#root
 https://webpack.js.org/plugins/mini-css-extract-plugin/#root
 
-Css modules
+## Css modules
 https://webpack.js.org/loaders/postcss-loader/#css-modules
 
-SVG
+## SVG
 https://react-svgr.com/docs/webpack/
 https://stackoverflow.com/questions/44717164/unable-to-import-svg-files-in-typescript
 
-IMAGE
+## IMAGE
 https://v4.webpack.js.org/loaders/file-loader/
 
-i18n
+## i18n
 https://www.i18next.com/overview/getting-started
 
-Hot Reshresh
+## Hot Reshresh
 https://webpack.js.org/guides/hot-module-replacement/
 
-Babel
+## Babel
 https://babeljs.io/setup
 
-Eslint
+## Eslint
 https://eslint.org/docs/latest/use/getting-started
 
-React Eslint Hook
+## React Eslint Hook
 https://ru.reactjs.org/docs/hooks-rules.html
 
-Jest
+## Jest
 https://jestjs.io/docs/getting-started#generate-a-basic-configuration-file
 
-BundelAnalizator
+## BundelAnalizator
 https://www.npmjs.com/package/webpack-bundle-analyzer
 
-React Testing Library
+## React Testing Library
 https://testing-library.com/docs/react-testing-library/intro/
 https://testing-library.com/docs/ecosystem-jest-dom/
 https://github.com/testing-library/jest-dom
@@ -65,32 +65,35 @@ https://jestjs.io/docs/tutorial-react
 https://jestjs.io/docs/webpack
 https://stackoverflow.com/questions/42535270/regeneratorruntime-is-not-defined-when-running-jest-test
 
-Webpack Storybook
+## Webpack Storybook
 https://storybook.js.org/docs/react/builders/webpack
 
-config StoryBook
+## config StoryBook
 https://storybook.js.org/docs/react/builders/webpack
 https://storybook.js.org/addons/storybook-css-modules - css
 https://storybook.js.org/docs/react/writing-stories/decorators - decorators
 
-Loki (ScreenTesting)
+## Loki (ScreenTesting)
 https://loki.js.org/getting-started.html
 FrontEnd (reg-cli) https://github.com/oblador/loki/issues/76
 
-GitActions
+## GitActions
 https://docs.github.com/ru/actions/quickstart
 https://dev.to/dyarleniber/setting-up-a-ci-cd-workflow-on-github-actions-for-a-react-app-with-github-pages-and-codecov-4hnp
 
-React Router Dom (test)
+## React Router Dom (test)
 https://reactrouter.com/en/main/router-components/memory-router
 
-React Toolkit
+## React Toolkit
 https://redux-toolkit.js.org/introduction/getting-started
 https://github.com/reduxjs/reselect (Reselect)
 
-JsonServer
+## JsonServer
 https://github.com/typicode/json-server
 https://github.com/typicode/json-server#custom-routes-example
+
+## Husky
+https://typicode.github.io/husky/#/
 
 ```
 yarn add -D webpack@5.69.1 webpack-cli@4.9.2 html-webpack-plugin@5.5.0 typescript@4.5.5 ts-loader@9.2.6
@@ -153,6 +156,10 @@ yarn add @reduxjs/toolkit react-redux
 ##JsonServer
 npm install -g json-server
 yarn add -D json-server
+
+## Husky
+npx husky-init
+
 
 ```
 

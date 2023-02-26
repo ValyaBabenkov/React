@@ -3,7 +3,6 @@ import {
     FC, InputHTMLAttributes, memo, useEffect, useRef, useState,
 } from 'react';
 import { classNames } from 'shared/lib/classNames/className';
-import './Input.module.scss';
 
 type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange'>
 interface InputProps extends HTMLInputProps{
@@ -17,7 +16,7 @@ const Input:FC<InputProps> = memo((props: InputProps) => {
         className, value, onChange, type = 'text', autofocus, ...otherProps
     } = props;
     const ref = useRef<HTMLInputElement>(null);
-    const [isFocused, setIsFocused] = useState(false);
+    const [_, setIsFocused] = useState(false);
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         onChange?.(e.target.value);
     };
@@ -34,7 +33,7 @@ const Input:FC<InputProps> = memo((props: InputProps) => {
     }, [autofocus]);
     return (
         <div
-            className={classNames('page__loader', {}, [
+            className={classNames('', {}, [
                 className,
             ])}
         >
