@@ -88,6 +88,7 @@ https://reactrouter.com/en/main/router-components/memory-router
 https://redux-toolkit.js.org/introduction/getting-started
 https://github.com/reduxjs/reselect (Reselect)
 https://redux-toolkit.js.org/api/createAsyncThunk (Async Thunk)
+https://redux.js.org/usage/code-splitting (Code Splitting, Using a 'Reducer Manager' )
 
 ## JsonServer
 https://github.com/typicode/json-server
